@@ -1,0 +1,459 @@
+<!doctype html> <!-- boilerplate by ! then hit tab -->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+      <meta property="og:locale" content="en_US"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+      <meta property="og:description" content="Kim Nguyen Portfolio Webpage"/>
+      <meta name="keywords"
+            content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume">
+
+      <!-- ------------------------------Favicon ------------------------- -->
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+
+      <!---------------------------------CSS--------------------------------->
+      <link rel="stylesheet" href="css/main.css">
+
+      <!----------------------------FONT AWESOME----------------------------->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous">
+
+      <!-- ------------ Bootstrap CDN (Content Delivery Network)------------->
+      <!-- https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+      <!-- ------------------------ACE------------------------------------ -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.4/ace.js"></script>
+
+      <title>Hello, I'm Kim</title>
+    </head>
+    <body>
+      <!-- -----------------------------Navigation ----------------------->
+      <div id="portfolio-nav">
+        <header>
+          <nav class='cf'>
+            <ul class='cf'>
+              <li style="box-shadow: none"><img
+                class="nav-logo-responsive" src="img/personal-logo-white.png"
+                alt="Kim Nguyen brand">
+              </li>
+              <li><a href='#portfolio-s1' style="width: 70px;">Home</a></li>
+              <li><a href='#portfolio-tech'>Tech Skills</a></li>
+              <li><a href='#portfolio-edu-exp'>Exp&Edu</a></li>
+              <li><a
+              href='#portfolio-projects'>Projects</a></li>
+              <li><a href="resume.html" target="_blank" style="width: 130px;">Resume(HTML)</a></li>
+              <li><a href="file/KimNguyenResume.pdf" target="_blank" style="width: 120px;">Resume(PDF)</a></li>
+              <li><a href="file/KimNguyenResume.docx" target="_blank" style="width: 130px;">Resume(DOCX)</a></li>
+              <li><a href="mailto: kimnnguyen225@gmail.com">&#64;
+                                                            E-Mail</a></li>
+              <li><a style="width: 50px;" href='#'
+                     onclick="window.open('https://github.com/kimnnguyen225?tab=repositories')"><i
+                class="fab fa-github"></i></a></li>
+              <li><a style="width: 50px;" href='https://www.linkedin.com/in/kimnnguyen225/'
+                     target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+              <li><a style="width: 50px;" href='https://codepen.io/kimnnguyen225/'
+                     target="_blank"><i
+                class="fab fa-codepen"></i></a></li>
+              <div id="google_translate_element" class="hide-on-small"></div>
+            </ul>
+            <a href='#' id='openup'>Menu</a>
+          </nav>
+          <div id="contact-barcode">
+            <img
+              src='https://barcode.tec-it.com/barcode.ashx?name=Kim+Nguyen&phonenumber=513-410-4388&phonenumberwork=513-410-4388&email=kimnnguyen225%40gmail.com&organisation=&title=Software+Developer&birthday=02.25.1993+00%3A00%3A00&address=8049+S+Port+Dr+West+Chester%2C+OH+45069&url=https%3A%2F%2Fktnguyen.herokuapp.com&code=QRCode_Business_vCard&translate-esc=false&data=KIM+DIGITAL+CARD%0D%0AName%3A+Kim+Nguyen%0D%0ATitle%3A+Software+Developer%0D%0ACell+phone%3A+513-410-4388%0D%0AE-mail%3A+kimnnguyen225%40gmail.com%0D%0AB-Day%3A+02-25-1993%0D%0AAddress%3A+West+Chester%2C+OH+45069%0D%0AURL%3A+https%3A%2F%2Fktnguyen.herokuapp.com&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0' alt='Kim Nguyen Software Developer'/>
+          </div>
+        </header>
+      </div>
+
+        <!-- -----------------------Live Editor----------------------------->
+      <section id="portfolio-s1" class="section">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <h1
+              class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">Hello World. My name is
+                                                                          Kim Nguyen</h1>
+          </div>
+          <div id="ace-live-editor" class="row align-items-baseline justify-content-center"
+                                                                                  onload="ready()">
+            <div id="portfolio-editor" class="col-12 col-sm-12 col-md-11 col-lg-4 col-xl-4">
+            </div>
+            <iframe src="" frameborder="0" id="portfolio-iframe"
+                    class="col-12 col-sm-12 col-md-11 col-lg-7 col-xl-7 embed-responsive-item">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------Technical Skills Section ---------------------------->
+      <section id="portfolio-tech" class="section">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <h2 class="col section-head">
+              <i class="fas fa-laptop-code mb"></i> Technical Skills <i
+              class="fas fa-code mb"></i>
+            </h2>
+          </div>
+          <div class="row align-items-baseline justify-content-center">
+            <div class="col-12 col-sm-12 col-md-11 col-lg-8 col-xl-8">
+              <h3>Category</h3>
+              <table class="table table-hover table-striped table-condensed table-responsive">
+                <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">List</th>
+                  <th scope="col" class="hide-on-450">Year</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">Methodology</th>
+                  <td>Waterfall (SDLC framework), Agile (Scrum framework)</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Operating System</th>
+                  <td>Windows (XP, 7,8,10), MAC, Android & iOS</td>
+                  <td class="text-center hide-on-450">10+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Front-end</th>
+                  <td>Object-Oriented Design, JSP/Servlet, JavaScript (Node.js), TypeScript, HTML5,
+                      CSS3/Bootstrap, jQuery, Angular 4</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Back-end</th>
+                  <td>Java 8-12, Spring GUI</td>
+                  <td class="text-center hide-on-450">2+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Server</th>
+                  <td>Tomcat, GlassFish</td>
+                  <td class="text-center hide-on-450">2+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Database</th>
+                  <td>SQL, MySQL, SQL Server, PostgreSQL (pgAdmin4), SQLite(DB Browser)</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                <tr>
+                  <th scope="row">IDE/Software</th>
+                  <td>IntelliJ IDEA, JetBrains WebStorm, Eclipse, Visual Studio, BlueJ,
+                      NetBeans, GitBash, HP Quality Center, JUnit, DOORS (Dynamic
+                      Object-Oriented Requirements ‘Management’ System)</td>
+                  <td class="text-center hide-on-450">2+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Repository</th>
+                  <td>GitHub/GitBash (Version Control System - Git)</td>
+                  <td class="text-center hide-on-450">2+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Familiar</th>
+                  <td>JDBC, Java API Doc</td>
+                  <td class="text-center hide-on-450">2+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Other Applications</th>
+                  <td >Microsoft Office Suite (365, up-to-2016v – include Skype/Lync, Visio,
+                       OneNote), Atom, Sublime Text, Slack, Trello, Jira (defect management)</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Experience</th>
+                  <td>Manual & Automation Testing, Data Analysis</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Knowledge</th>
+                  <td>Retail/POS, Healthcare, Personal Lines/Health Insurance domains</td>
+                  <td class="text-center hide-on-450">3+</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------- Experience and Education Section ----------------------->
+      <section id="portfolio-edu-exp" class="section">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <h2 class="section-head">
+              <i class="fas fa-graduation-cap"></i>
+              Education & Experience
+              <i class="fas fa-user-tie"></i>
+            </h2>
+          </div>
+          <div class="row align-items-baseline justify-content-center">
+            <div class="col-12 col-sm-12 col-md-11 col-lg-4 col-xl-4">
+              <h3>Academic Education</h3>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">Xavier Uni.</th>
+                  <th scope="col">Cincinnati, OH</th>
+                  <th scope="col">2011-2012</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">Majors</th>
+                  <td>Mathematics/Chemistry</td>
+                </tr>
+                </tbody>
+              </table>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">MAX Technical Training</th>
+                  <th scope="col">Mason, OH</th>
+                  <th scope="col">07/2017-10/2017</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">Focus</th>
+                  <td colspan="2">Full Stack Java Software Development Bootcamp</td>
+                </tr>
+                <tr>
+                  <th scope="row">Focus</th>
+                  <td>Scrum Foundation (Scrum.org)</td>
+                </tr>
+                </tbody>
+              </table>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">Per Scholas</th>
+                  <th scope="col">Cincinnati, OH</th>
+                  <th scope="col">07/2016-09/2016</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row" >Focus</th>
+                  <td>Software Quality Assurance</td>
+                </tr>
+                </tbody>
+              </table>
+              <br>
+              <h3>Certifications</h3>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">Scrum.org</th>
+                  <th scope="col">10/2017</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">License</th>
+                  <td>PSM1 - 290162</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 col-sm-12 col-md-11 col-lg-7 col-xl-7">
+              <h3>Professional Experience</h3>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">QA/Technical Consultant - Vertex (Cincinnati
+                                  Financial Co.'s Contractor) - Fairfield, OH - 03/2019 - current</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>&#187; Performed Interface Functional Testing on web-based
+                      system
+                      (Diamond) on all PLB that CIC and CCC service with 3rd party
+                      vendor systems to ensure systems interchange data correctly.
+                      Defect/Bug Triage, diagnosed, debugged, and reproduced
+                      Defect/Bug Triage, diagnosed, debugged, and reproduced
+                      defects when Diamond interacted with 3rd party vendor
+                      systems.</td>
+                </tr>
+                <tr>
+                  <td>&#187; Created, tested, modified, and maintained test
+                      script/design
+                      procedures and test cases in Test Plan, Test Lab (Manual &
+                      Automation (utilized VNC lab machines), & Defect modules in HP Quality Center using DOORS. Collaborated with BA’s, Dev’s, QA’s to review new requirements/CRs and to plan for project’s upcoming release.</td>
+                </tr>
+                </tbody>
+              </table>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">QA/Data Analyst - Thrive Impact Sourcing
+                                              (CareSource's Contractor) - Cincinnati, OH - 10/2016 -
+                                              07/2017</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>&#187; Documented software defects, using a bug tracking
+                      system, and reported defects to developers.</td>
+                </tr>
+                <tr>
+                  <td>&#187; Analyzed reports written in SAS, built Data Process
+                      Flow chart for each SAS report utilized Visio 2013, created Data Genealogy to show where data being extracted from multiple data sources (SQL Server, Teradata, file system (flat files like XML, XLS, XLSX, & text files), how data transformed/formatted, and where it’s being loaded/stored to, to provide traceability for all regulatory data.</td>
+                </tr>
+                <tr>
+                  <td>&#187; Validated data with database SQL queries utilized
+                      Microsoft SQL Server Management Studio.</td>
+                </tr>
+                </tbody>
+              </table>
+              <table class="table table-responsive{-sm|-md|-lg|-xl}">
+                <thead class="thead-light">
+                <tr>
+                  <th scope="col">Receptionist/Customer Service - L&T Salon -
+                                  Hamilton, OH - 10/2010 - 03/2019</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>&#187; Maintained products’ and services’ continuous
+                      knowledge to
+                      effectively communicate sales, promotions and additional services to clients to enhance their experience and maximize sales. Handled dissatisfied clients by communicating and resolving their complaints.</td>
+                </tr>
+                <tr>
+                  <td>&#187; Conducted inventory and ordered products for internal
+                      use and
+                      retail sale. Answered phone, scheduled and canceled client appointments.</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------PROJECTS------------------------------------- -->
+      <section id="portfolio-projects" class="section">
+        <div class="container-fluid">
+          <h2 class="section-head">
+            <i class="black-icon fas fa-network-wired mb"></i> My Projects <i
+            class="black-icon fas fa-code-branch mb"></i>
+          </h2>
+          <div class="row">
+            <div class="col">
+              <div class="main-timeline">
+                <div class="timeline">
+                  <span class="icon fas fa-user-tie"></span>
+                  <div class="timeline-content">
+                    <h3 class="title">Front-end Portfolio
+                        <a href="https://ktnguyen.herokuapp.com/"
+                           target="_blank"><img class="hide-on-450" src="img/heroku-32x32.png"
+                                                alt="heroku icon">
+                        </a>
+                        <a href="https://github.com/kimnnguyen225/MyPortfolio"
+                           target="_blank"><i class="fab fa-github"></i>
+                        </a>
+                    </h3>
+                    <p class="description">
+                      <ul class="hide-on-small">
+                        <li>Technology: HTML5, CSS3, Bootstrap CDN 3&4, ACE, jQuery, JavaScript</li>
+                        <li>IDE: WebStorm 2019.1, Adobe Photoshop CC 2019, Chrome/JetBrain IDE Support</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <span class="icon fas fa-music"></span>
+                  <div class="timeline-content">
+                    <h3 class="title">QC-Tunes
+                      <a href="https://qctunes.herokuapp.com/"
+                         target="_blank"><img src="img/heroku-32x32.png" class="hide-on-450"
+                                              alt="heroku icon">
+                      </a>
+                      <a href="https://github.com/kimnnguyen225/QueenCityTunes"
+                         target="_blank"><i class="fab fa-github"></i>
+                      </a>
+                    </h3>
+                    <p class="description">
+                      <ul class="hide-on-small">
+                        <li>In-progress with JSP/Servlet - Tomcat9.0.19 to create more
+                            features/contents to this music webpage</li>
+                        <li>Technology: HTML5, CSS3, Bootstrap, jQuery, JavaScript</li>
+                        <li>IDE: WebStorm 2019.1, Adobe Photoshop CC 2019, Chrome/JetBrain IDE Support</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <span class="icon fa fa-edit"></span>
+                  <div class="timeline-content">
+                    <h3 class="title">Student Data MS
+                      <a href="https://github.com/kimnnguyen225/Student-Data-Management-System"
+                         target="_blank"><i class="fab fa-github"></i>
+                      </a>
+                    </h3>
+                    <p class="description">
+                      <ul class="hide-on-small">
+                        <li>In-progress - Simple Java Swing GUI application that allows school's
+                            authorizers to manage students' courses' scores and transcripts</li>
+                        <li>Technology: Java JDK 1.8.0, SwingGUI JFrame Form</li>
+                        <li>IDE: NetBeans 8.2. Database: SQLite (DB Browser)</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <span class="icon fas fa-store"></span>
+                  <div class="timeline-content">
+                    <h3 class="title">Inventory Management System</h3>
+                    <p class="description">
+                      <ul class="hide-on-small">
+                        <li>COMING - Simple Java Swing GUI application that allows users to
+                            manage products in the inventory</li>
+                        <li>Technology: Java JDK 1.8.0, SwingGUI JFrame Form</li>
+                        <li>IDE: NetBeans 8.2. Database: SQLite (DB Browser)</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------ Footer ------------------------------------>
+        <footer id="portfolio-footer">
+          <div class="footer-copyright text-center">
+            Copyright &copy; Kim Nguyen 2019
+          </div>
+        </footer>
+      </section>
+
+    <!-- put javascript here, especially where the script is not hosted by you.
+		This allows the page to load without being blocked loading external resources. -->
+    <!-- ---------------jQuery will pull from internet versus local file ------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+
+    <!------------- google translate -------------->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>

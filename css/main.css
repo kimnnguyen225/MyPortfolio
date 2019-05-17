@@ -1,0 +1,725 @@
+/*---------------------------------IMPORT FONT-------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Akronim|Gugi');
+
+/* --------------------------------CSS VARIABLES------------------------------ */
+:root {
+  --primary-color: #2105b9;
+  --primary-color-hover: #0e98b9;
+  --secondary-color: #2105b9;
+  --secondary-color-hover: #0a90b9;
+  --light-color: #e0c0b8;
+}
+
+/*------------------------------home.html---------------------------------*/
+/*------------------------Navigation & Section 1 -----------------------------*/
+#portfolio-s1 {
+  margin: 0;
+  padding: 0;
+  background: url("../img/portfolio-s1.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+
+#portfolio-s1 h1 {
+  font-family: 'Akronim', cursive;
+  color: black;
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* --------------------live editor, frame--------------------*/
+#ace-live-editor {
+  padding-bottom: 6rem;
+}
+#portfolio-editor {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#portfolio-iframe {
+  height: 80vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/*----------------------Section 2 - Technical Skills -------------------------*/
+section#portfolio-tech {
+  background-color: white;
+  font-size: 16px;
+}
+
+#portfolio-tech .section-head {
+  padding-top: 3rem;
+}
+
+#portfolio-tech h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#portfolio-tech h3 {
+  text-align: center;
+  border-bottom: #21282d solid 1px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+section#portfolio-tech, section#portfolio-edu-exp table {
+  color: #000000;
+  text-align: left;
+  white-space: normal;
+}
+
+#portfolio-tech div table tr, #portfolio-edu-exp div table tr {
+  line-height: 18px;
+}
+
+#portfolio-tech li {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+#portfolio-tech li a:hover {
+  text-decoration: none;
+}
+
+/*----------------------Section 3 - Exp / Education -------------------------*/
+section#portfolio-edu-exp {
+  background-color: #daeee3;
+  font-size: 16px;
+}
+
+#portfolio-edu-exp h2 {
+  text-align: center;
+}
+
+#portfolio-edu-exp h3 {
+  text-align: center;
+  border-bottom: #21282d solid 1px;
+  padding-bottom: 5px;
+}
+
+/*----------------------Section 4 - Projects -------------------------*/
+/* Credit to https://www.youtube.com/watch?v=FQ0c76LGW1M*/
+section#portfolio-projects {
+  background: url("../img/project-tree.jpg") no-repeat center/cover;
+}
+
+#portfolio-projects h2 {
+  text-align: center;
+}
+
+#portfolio-projects i {
+  color: white;
+}
+
+#portfolio-projects .black-icon {
+  color: #000000;
+}
+
+/* padding content down*/
+#portfolio-projects .main-timeline {
+  padding-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/*tree vertical*/
+#portfolio-projects .main-timeline:before {
+  content: "";
+  width: 7px;
+  height: 100px;
+  background: #084772;
+  margin: 0 auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+}
+
+/*tree branch left - horizontal*/
+#portfolio-projects .main-timeline .timeline {
+  width: 50%;
+  float: left;
+  padding: 20px 60px;
+  border-top: 7px solid #084772;
+  border-right: 7px solid #084772;
+  border-radius: 0 30px 0 0;
+  position: relative;
+  right: -3.5px;
+}
+
+/*tree branch right - horizontal*/
+#portfolio-projects .main-timeline .timeline:nth-child(2n) {
+  border-right: none;
+  border-left: 7px solid #084772;
+  border-radius: 30px 0 0 0;
+  right: auto;
+  left: -3.5px;
+}
+
+/*icon at end of branches*/
+#portfolio-projects .main-timeline .icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #792222;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #792222;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+/* description box*/
+#portfolio-projects .main-timeline .timeline-content {
+  display: block;
+  padding: 30px 10px 10px;
+  border-radius: 20px;
+  background: #792222;
+  color: #ffffff;
+  position: relative;
+}
+
+/* double hanging lines*/
+#portfolio-projects .main-timeline .timeline-content:before, #portfolio-projects .main-timeline .timeline-content:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 50px;
+  border-radius: 10px;
+  background: #792222;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: -35px;
+  /*right hanging line*/
+  left: 50px;
+}
+
+/* left hanging line*/
+#portfolio-projects .main-timeline .timeline-content:after {
+  left: auto;
+  right: 50px;
+}
+
+/*Project titles*/
+#portfolio-projects .main-timeline .title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/*Project descriptions*/
+#portfolio-projects .main-timeline .description {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(2n) .icon {
+  left: auto;
+  right: 0;
+}
+
+/*QC-Tunes margin top*/
+#portfolio-projects .main-timeline .timeline:nth-child(2) {
+  margin-top: 130px;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(odd) {
+  margin: -130px 0 30px 0;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(even) {
+  margin-bottom: 80px;
+}
+
+#portfolio-projects .main-timeline .timeline:first-child, #portfolio-projects .main-timeline .timeline:last-child:nth-child(even) {
+  margin: 0 0 30px 0;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(2n) .timeline-content, #portfolio-projects .main-timeline .timeline:nth-child(2n) .timeline-content:before, #portfolio-projects .main-timeline .timeline:nth-child(2n) .timeline-content:after, #portfolio-projects .main-timeline .timeline:nth-child(2n) .icon {
+  background: #2d895f;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(2n) .icon {
+   box-shadow: 0 0 0 2px #2d895f;
+ }
+
+#portfolio-projects .main-timeline .timeline:nth-child(3n) .timeline-content, #portfolio-projects .main-timeline .timeline:nth-child(3n) .timeline-content:before, #portfolio-projects .main-timeline .timeline:nth-child(3n) .timeline-content:after, #portfolio-projects .main-timeline .timeline:nth-child(3n) .icon {
+  background: #c17309;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(3n) .icon {
+  box-shadow: 0 0 0 2px #c17309;
+}
+
+#portfolio-projects .main-timeline .timeline:nth-child(4n) .timeline-content, #portfolio-projects .main-timeline .timeline:nth-child(4n) .timeline-content:before, #portfolio-projects .main-timeline .timeline:nth-child(4n) .timeline-content:after, #portfolio-projects .main-timeline .timeline:nth-child(4n) .icon {
+  background-color: #293b89;
+}
+#portfolio-projects .main-timeline .timeline:nth-child(4n) .icon {
+  box-shadow: 0 0 0 2px #293b89;
+}
+
+/* --------------------------------------Footer---------------------------------- */
+
+#portfolio-footer .footer-copyright {
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+/* ----------------------------- UTILITIES----------------------------*/
+/* --------------------------------SECTION------------------------------------ */
+.section {
+  padding: 1.5rem 0; /*top bottom, left right*/
+}
+
+.section-head {
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 3.5rem;
+}
+
+/* ----------------Body - Container - Link - Image - Margin------------------ */
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #21282d;
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+#portfolio-s1 .container-fluid, #portfolio-edu-exp .container-fluid, #portfolio-tech .container-fluid {
+  padding-right: 7rem;
+  padding-left: 7rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mb { /*margin bottom*/
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+/*
+-- bouncing arrow icon
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+*/
+/*-------------------- disable tag matching - portfolio.jsp-----------------------*/
+.ace_editor .ace_marker-layer .ace_bracket {
+  display: none
+}
+
+/* -----------------------------------Text -------------------------------- */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* ------------------------------------Buttons----------------------------------
+.btn {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/* ------------------------------------Navigation------------------------------- */
+nav {
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav div {
+  margin: 0 3px 0 0;
+  padding: 2px;
+  float: right;
+}
+
+#portfolio-nav .nav-logo-responsive {
+  height: auto;
+  width: auto;
+  max-height: 37px;
+  max-width: 200px;
+  padding-left: 4rem;
+}
+
+
+#portfolio-nav #contact-barcode img {
+  margin-top: 3vh;
+  padding: 2rem;
+  width: 13rem;
+  position: fixed;
+  margin-left: 90vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav li:hover .nav-logo-responsive {
+  background-color: #333;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #eee;
+}
+
+nav li:hover {
+  background-color: #444;
+  box-shadow: 3px 3px 3px #575a5b;
+}
+
+nav a#openup {
+  display: none;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/*--------------------------------QUERIES MEDIA----------------------------*/
+@media all and (max-width:1429px) {
+  #google_translate_element {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1099px) {
+  #contact-barcode {
+    display: none;
+  }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+
+  nav ul {
+    display: none;
+    height: auto;
+  }
+
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+  }
+
+  nav a:hover {
+    background: #444;
+  }
+
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+
+/*extra-large >= 1200px .col-xl-*/
+@media all and (min-width: 1200px) {
+
+  #portfolio-projects .container-fluid {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+}
+
+/*large >= 992px to <= 1999px .col-lg-*/
+@media all and (min-width: 992px) and (max-width: 1199px) {
+
+  #portfolio-projects .container-fluid {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+}
+
+/*medium >= 768px to <= 991px .col-md-*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .section-head {
+    font-size: 2.5rem;
+  }
+
+  #portfolio-tech h3, #portfolio-edu-exp h3, #portfolio-projects h3 {
+    font-size: 2rem;
+  }
+
+  #portfolio-projects .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media all and (max-width: 719px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+/*small >= 576px to <= 767px .col-sm-*/
+@media all and (min-width: 576px) and (max-width: 767px) {
+
+  #portfolio-s1 .container-fluid  {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  #portfolio-projects .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #portfolio-projects .main-timeline .title {
+    font-size: 16px;
+  }
+}
+/*extra-small < 576px .col-*/
+@media all and (max-width: 576px) {
+
+  .section-head {
+    font-size: 2.2rem;
+  }
+
+  #portfolio-s1 h1 {
+    font-size: 3.5rem;
+  }
+
+  #portfolio-s1 .container-fluid, #portfolio-edu-exp .container-fluid, #portfolio-tech .container-fluid, #portfolio-projects .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  #portfolio-tech h2, #portfolio-edu-exp h2, #portfolio-projects h2 {
+    font-size: 2.3rem;
+  }
+
+  #portfolio-tech h3, #portfolio-edu-exp h3, #portfolio-projects h3 {
+    font-size: 2.1rem;
+  }
+
+  #portfolio-tech li {
+    text-align: left;
+  }
+
+  #portfolio-tech li, #portfolio-tech th, #portfolio-tech td, #portfolio-edu-exp li, #portfolio-edu-exp th, #portfolio-edu-exp td {
+    font-size: 1.8rem;
+  }
+
+  #portfolio-projects .main-timeline .title {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 450px) {
+
+  #portfolio-projects .main-timeline .title {
+    font-size: 1.3rem;
+  }
+
+  .hide-on-450 {
+    display: none;
+  }
+
+  /* padding content down*/
+  #portfolio-projects .main-timeline {
+    padding-top: 30px;
+  }
+
+  /*tree vertical*/
+  #portfolio-projects .main-timeline:before {
+    content: "";
+    width: 3px;
+    height: 1px;
+  }
+
+  /*tree branch left - horizontal*/
+  #portfolio-projects .main-timeline .timeline {
+    width: 50%;
+    padding: 20px 20px 20px 30px;
+    border-top: 4px solid #084772;
+    border-right: 4px solid #084772;
+    border-radius: 0 15px 0 0;
+    right: -1px;
+}
+
+  /*tree branch right - horizontal*/
+  #portfolio-projects .main-timeline .timeline:nth-child(2n) {
+    padding: auto 30px auto 15px;
+    border-left: 4px solid #084772;
+    border-radius: 15px 0 0 0;
+  }
+
+  /*icon at end of branches*/
+  #portfolio-projects .main-timeline .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    top: -17px;
+  }
+
+  /* description box*/
+  #portfolio-projects .main-timeline .timeline-content {
+    padding: 10px 10px 10px; /*text padding*/
+    border-radius: 10px; /*box round corner*/
+
+    position: relative;
+  }
+
+  /* double hanging lines*/
+  #portfolio-projects .main-timeline .timeline-content:before, #portfolio-projects .main-timeline .timeline-content:after {
+    width: 5px;
+    height: 30px;
+    top: -27px;
+    /*right hanging line position*/
+    left: 40px;
+  }
+
+  /* left hanging line*/
+  #portfolio-projects .main-timeline .timeline-content:after {
+    left: auto;
+    right: 40px;
+  }
+
+  /*QC-Tunes margin top*/
+  #portfolio-projects .main-timeline .timeline:nth-child(2) {
+    margin-top: 115px;
+  }
+
+  /*Student Data MS vertical tree*/
+  #portfolio-projects .main-timeline .timeline:nth-child(odd) {
+    margin: -90px 0 30px 0;
+  }
+
+  #portfolio-projects .main-timeline .timeline:nth-child(even) {
+    margin-bottom: 80px;
+  }
+
+  #portfolio-projects .main-timeline .timeline:first-child, #portfolio-projects .main-timeline .timeline:last-child:nth-child(even) {
+    margin: 0 0 30px 0;
+  }
+}
+
+
