@@ -42,7 +42,7 @@ function setupEditor() {
       <tr><td><i class="far fa-hand-point-right"></i> stackoverflow</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> GitHub</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> W3Schools</td></tr>
-      <tr><td><i class="far fa-hand-point-right"></i> Lynda and freeCodeCamp</td></tr>
+      <tr><td><i class="far fa-hand-point-right"></i> Lynda</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> freeCodeCamp</td></tr>
     </table>
   </body>
