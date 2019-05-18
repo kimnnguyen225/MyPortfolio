@@ -44,8 +44,14 @@
             <img
               class="nav-logo-responsive" src="../../../../img/personal-logo-white.png"
               alt="Kim Nguyen brand">
-            <a href="../../../../blog.html" style="width: 60px;">Blog</a>
-            <a href='../../../../home.html' target="_blank" style="width: 80px;">Portfolio</a>
+            <a href="../../../../blog.html" style="width: 60px;">More Blogs</a>
+            <a href='../../../../home.html' target="_blank" style="width: 80px;">About Author</a>
+            <hr>
+            <footer class="text-right blockquote-footer"><i class="fas fa-user-tie"></i> Author: Kim
+                                                                                  Nguyen,
+              <cite title="Source Title"> Software Developer/Blogger</cite><br><i
+                class="far fa-calendar-alt"> Date: 05/18/2019</i></footer>
+
           </div>
           <h1 class="blog-title">A "PHP app" as a static site that is hosted on Heroku</h1>
         </div>
@@ -88,17 +94,17 @@
               Instruction Steps
             </h2>
             <ol>
-              <li>Run command, type: <strong>heroku buildpacks:set heroku/php</strong> --Read
+              <li>Run <kbd>cmd</kbd>, type: <kbd>heroku buildpacks:set heroku/php</kbd> --Read
                   more: <a
                   href="https://devcenter.heroku.com/articles/buildpacks" target="_blank">Heroku
                                                                                           buildpacks</a></li>
               <li>Add a file called <em>composer.json</em> to the root directory <strong>by running
-                                                                                          cmd or
+                <kbd>cmd</kbd> or
                                                    directly from your project folder that you
                                                                                          have it
                                                                                          opened
                                                                                          in
-                                                                                         IDE</strong> --type: <strong>touch composer.json</strong> or --on command window, type: <strong>type nul > composer.json</strong> (this will create a zero bytes in composer.json file) or another way, you type: <strong>echo.> composer.json</strong> (echo. will create a file with 1 empty line in it)
+                                                                                         IDE</strong> --type: <kbd>touch composer.json</kbd> or --on command window, type: <kbd>type nul > composer.json</kbd> (this will create a zero bytes in composer.json file) or another way, you type: <kbd>echo.> composer.json</kbd> (echo. will create a file with 1 empty line in it)
                 <br><br>
                 <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147306/Blog/3_gwsj8f.png" alt="">
                 <br><br>
@@ -110,8 +116,8 @@
                 <br><br>
               </li>
               <li>Add a file called <em>index.php</em> to the root directory by running
-                <strong>cmd: touch
-                        index.php</strong> or <strong>nul > index.php</strong></li>
+                <kbd>cmd</kbd>: <kbd>touch
+                        index.php</kbd> or <kbd>nul > index.php</kbd></li>
               <li>Rename/Refactor your project's homepage (e.g.
                 <em>index.html</em>) to <em>home.html</em></li>
               <li>Open <em>index.php</em> and add the following line:
@@ -132,23 +138,31 @@
               </li>
               <li>Save everything and run Heroku CLI
                   <ol>
-                    <li><code>heroku login</code> sign in to your Heroku account
+                    <li><kbd>heroku login</kbd> sign in to your Heroku account
                       <br><br><img
                         src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558146713/Blog/1_ljachn.png" alt="Heroku Login Command Line">
                       <br><br><img
                         src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558146713/Blog/2_jpmain.png" alt="Heroku Login">
                     </li>
-                    <li><code>cd /your project path</code></li>
-                    <li><code>git init</code> initialize an empty Heroku git in your application
+                    <li><kbd>cd /your project path</kbd></li>
+                    <li><kbd>git init</kbd> initialize an empty Heroku git in your application
                                               folder</li>
-                    <li><code>heroku git:remote -a your-app-name</code> the app you created on
+                    <li><kbd>heroku git:remote -a your-app-name</kbd> remote to the app you
+                                                                      created on
                                                                         your Heroku account</li>
-                    <li><code>git add .</code> this will add all files in your folder to
+                    <li><kbd>git add .</kbd> this will add all files in your folder to
                                                Heroku</li>
-                    <li><code>git commit -am "initial commit"</code> commit code with a message</li>
-                    <li><code>git push heroku master</code> this will push all your code to
+                    <li><kbd>git commit -am "initial commit"</kbd> commit code (permanently save
+                                                                   all the changes which you have
+                                                                   made in the current transaction)
+                                                                   with a
+                                                                   message,
+                                                                   if you don't provide a
+                                                                   message, your commit will be
+                    aborted (to disrupt the action by killing the current ongoing transaction).</li>
+                    <li><kbd>git push heroku master</kbd> this will push all your code to
                                                             master branch</li>
-                    <li><code>heroku open</code> this command will open your heroku site on
+                    <li><kbd>heroku open</kbd> this command will open your heroku site on
                                                  your windows default browser</li>
                   </ol>
               </li>
@@ -177,5 +191,8 @@
       </div>
     </div>
   </section>
+<footer>
+
+</footer>
 </body>
 </html>
