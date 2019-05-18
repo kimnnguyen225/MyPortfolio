@@ -44,6 +44,7 @@ function setupEditor() {
       <tr><td><i class="far fa-hand-point-right"></i> GitHub</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> W3Schools</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> Lynda</td></tr>
+      <tr><td><i class="far fa-hand-point-right"></i> CodePen</td></tr>
     </table>
   </body>
 </html>`,1); // 1 = moves cursor to end
