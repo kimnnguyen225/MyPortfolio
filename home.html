@@ -18,33 +18,26 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
 
-      <!---------------------------------CSS--------------------------------->
-      <link rel="stylesheet" href="css/main.css">
+      <!--------------------------- Main CSS-------------------------->
+      <link href="css/main.css" rel="stylesheet" media="all">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!-- ---------------------------CDN--------------------------- -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
       <!----------------------------FONT AWESOME----------------------------->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
             crossorigin="anonymous">
 
-      <!-- ------------ Bootstrap CDN (Content Delivery Network)------------->
-      <!-- https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
       <!-- ------------------------ACE------------------------------------ -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.4/ace.js"></script>
 
       <title>Hello, I'm Kim</title>
     </head>
-    <body>
+    <body devtools.*.enabled="false">
       <!-- -----------------------------Navigation ----------------------->
       <div id="portfolio-nav">
         <header>
@@ -62,8 +55,7 @@
               <li><a href="resume.html" target="_blank" style="width: 130px;">Resume(HTML)</a></li>
               <li><a href="file/KimNguyenResume.pdf" target="_blank" style="width: 120px;">Resume(PDF)</a></li>
               <li><a href="file/KimNguyenResume.docx" target="_blank" style="width: 130px;">Resume(DOCX)</a></li>
-              <li><a href="mailto: kimnnguyen225@gmail.com">&#64;
-                                                            E-Mail</a></li>
+              <li><a href="blog.html" target="_blank">Blog</a></li>
               <li><a style="width: 50px;" href='#'
                      onclick="window.open('https://github.com/kimnnguyen225?tab=repositories')"><i
                 class="fab fa-github"></i></a></li>
@@ -113,7 +105,6 @@
           </div>
           <div class="row align-items-baseline justify-content-center">
             <div class="col-12 col-sm-12 col-md-11 col-lg-8 col-xl-8">
-              <h3>Category</h3>
               <table class="table table-hover table-striped table-condensed table-responsive">
                 <thead>
                 <tr>

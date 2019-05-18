@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+  <meta property="og:description" content="Kim Nguyen Portfolio Webpage"/>
+  <meta name="keywords"
+        content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume, heroku, heroku PHP app, static site, host static site to heroku">
+
+  <!-- ------------------------------Favicon ------------------------- -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--------------------------- Main CSS-------------------------->
+  <link href="../../../css/main.css" rel="stylesheet" media="all">
+  <link href="../../../css/blog.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- ---------------------------CDN--------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!----------------------------FONT AWESOME----------------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+  <title>Heroku PHP app as Static Site</title>
+</head>
+<body devtools.*.enabled="false">
+  <!-- -----------------------Blog----------------------------->
+  <section id="blog" class="section bg-gra">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">
+          <div id="top-link" class="text-center">
+            <img
+              class="nav-logo-responsive" src="../../../img/personal-logo-white.png"
+              alt="Kim Nguyen brand">
+            <a href="../../../blog.html" style="width: 60px;">Blog</a>
+            <a href='../../../home.html' target="_blank" style="width: 80px;">Portfolio</a>
+          </div>
+          <h1 class="blog-title">A "PHP app" as a static site that is hosted on Heroku</h1>
+        </div>
+      </div>
+
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+          <div id="blog-desc">
+            <h2>
+              What is Heroku? Why do this?
+            </h2>
+            <ul>
+              <li>Heroku hosts apps on the internet, not static website. However, if you want it to run
+                  your static porfolio, personal blog, responsive landing page, etc., you can trick <a
+                  href="https://www.heroku.com/" target="_blank">Heroku</a> to think your page is PHP
+                  app.</li>
+            </ul>
+            <h2>
+              Assumption
+            </h2>
+            <ul>
+              <li>You want to deploy a straight-up HTML, CSS, JavaScript, jQuery, and maybe some images</li>
+              <li>You are in the root directory of your site (i.e. the directory that contains all subdirectories and files for the site.</li>
+              <li><strong>Unless you have all of your subdirectories for CSS, JS, etc., and files
+                               like
+                           HTML in /home or /web as the root directory, then see additional
+                          instruction when create Procfile</strong></li>
+              <li>The root directory contains a main HTML page, e.g. index.html</li>
+              <li>You have an account with <a
+                href="https://www.heroku.com/" target="_blank">Heroku</a></li>
+              <li>You have <a
+                href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku CLI</a> installed on your
+                  machine.</li>
+              <li>A <a
+                href="https://devcenter.heroku.com/start" target="_blank">Heroku app</a> (in
+                  this case, "fake" PHP app (your HTML/CSS static site) and
+                  remote are set-up and ready to go.</li>
+            </ul>
+            <h2>
+              Instruction Steps
+            </h2>
+            <ol>
+              <li>Run command, type: <strong>heroku buildpacks:set heroku/php</strong> --Read
+                  more: <a
+                  href="https://devcenter.heroku.com/articles/buildpacks" target="_blank">Heroku
+                                                                                          buildpacks</a></li>
+              <li>Add a file called <em>composer.json</em> to the root directory <strong>by running
+                                                                                          cmd or
+                                                   directly from your project folder that you
+                                                                                         have it
+                                                                                         opened
+                                                                                         in
+                                                                                         IDE</strong> --type: <strong>touch composer.json</strong> or --on command window, type: <strong>type nul > composer.json</strong> (this will create a zero bytes in composer.json file) or another way, you type: <strong>echo.> composer.json</strong> (echo. will create a file with 1 empty line in it)
+                <br><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147306/Blog/3_gwsj8f.png" alt="">
+                <br><br>
+              </li>
+              <li>Open <em>composer.json</em> and add the following line: <code>{}</code>, then save
+                  file
+                <br><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147499/Blog/4_hojlsv.png" alt="">
+                <br><br>
+              </li>
+              <li>Add a file called <em>index.php</em> to the root directory by running
+                <strong>cmd: touch
+                        index.php</strong> or <strong>nul > index.php</strong></li>
+              <li>Rename/Refactor your project's homepage (e.g.
+                <em>index.html</em>) to <em>home.html</em></li>
+              <li>Open <em>index.php</em> and add the following line:
+                <code> &#60;?php include_once("home.html"); ?&#62; </code>, then save file
+                <br><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147499/Blog/5_ullu0k.png" alt="">
+                <br><br>
+              </li>
+              <li>Add a file called <a
+                href="https://devcenter.heroku.com/articles/procfile"
+                target="_blank"><em>Procfile</em></a> <strong>without a file extension, e.g.
+                  Procfile.text is not valid</strong> to your app's root directory. It does not function if placed anywhere else.</li>
+              <li>Open <em>Procfile</em> and add the following line: <code>web:
+                                                                           vendor/bin/heroku-php-apache2</code>. <strong>Notice:</strong> if your root directory is /web or /home, then add the following line: <code>web: vendor/bin/heroku-php-apache2 /web</code> or <code>web: vendor/bin/heroku-php-apache2 /home</code>
+                <br><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147499/Blog/6_dgmrr7.png" alt="">
+                <br><br>
+              </li>
+              <li>Save everything and run Heroku CLI
+                  <ol>
+                    <li><code>heroku login</code> sign in to your Heroku account
+                      <br><br><img
+                        src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558146713/Blog/1_ljachn.png" alt="Heroku Login Command Line">
+                      <br><br><img
+                        src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558146713/Blog/2_jpmain.png" alt="Heroku Login">
+                    </li>
+                    <li><code>cd /your project path</code></li>
+                    <li><code>git init</code> initialize an empty Heroku git in your application
+                                              folder</li>
+                    <li><code>heroku git:remote -a your-app-name</code> the app you created on
+                                                                        your Heroku account</li>
+                    <li><code>git add .</code> this will add all files in your folder to
+                                               Heroku</li>
+                    <li><code>git commit -am "initial commit"</code> commit code with a message</li>
+                    <li><code>git push heroku master</code> this will push all your code to
+                                                            master branch</li>
+                    <li><code>heroku open</code> this command will open your heroku site on
+                                                 your windows default browser</li>
+                  </ol>
+              </li>
+            </ol>
+            <h2>
+              Dependencies
+            </h2>
+            <h4>
+              <u>For example:</u>
+            </h4>
+            <ul>
+              <li>If your app runs jQuery, then you can go to <a
+                href="https://cdnjs.com/" target="_blank">CNDJS</a> and search for jquery, CND
+                  will give you a list of results that it found for the library that your app
+                  depends on, hover over the one you want to copy script tag, then place it
+                  inside your HTML file. <strong>Benefits?</strong> jQuery library will be pulled
+                  from the
+                  internet directly versus local file.
+                <br><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558147811/Blog/7_pawykx.png" alt="">
+                <br><br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

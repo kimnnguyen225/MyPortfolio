@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+  <meta property="og:description" content="Kim Nguyen Portfolio Webpage"/>
+  <meta name="keywords"
+        content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume">
+
+  <!-- ------------------------------Favicon ------------------------- -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--------------------------- Main CSS-------------------------->
+  <link href="css/main.css" rel="stylesheet" media="all">
+  <link href="css/blog.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- ---------------------------CDN--------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!----------------------------FONT AWESOME----------------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+  <!-- ------------------------ACE------------------------------------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.4/ace.js"></script>
+
+  <title>Codeaholic Blog</title>
+</head>
+<body devtools.*.enabled="false">
+  <!-- -----------------------------Navigation ----------------------->
+  <div id="portfolio-nav">
+    <header>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li style="box-shadow: none"><img
+            class="nav-logo-responsive" src="img/personal-logo-white.png"
+            alt="Kim Nguyen brand">
+          </li>
+          <li><a href="blog.html" target="_blank" style="width: 60px;">Blog</a></li>
+          <li><a href='home.html' target="_blank" style="width: 80px;">Portfolio</a></li>
+          <li><a href="resume.html" target="_blank" style="width: 130px;">Resume(HTML)</a></li>
+          <li><a href="file/KimNguyenResume.pdf" target="_blank" style="width: 120px;">Resume(PDF)</a></li>
+          <li><a href="file/KimNguyenResume.docx" target="_blank" style="width: 130px;">Resume(DOCX)</a></li>
+          <li><a style="width: 50px;" href='#'
+                 onclick="window.open('https://github.com/kimnnguyen225?tab=repositories')"><i
+            class="fab fa-github"></i></a></li>
+          <li><a style="width: 50px;" href='https://www.linkedin.com/in/kimnnguyen225/'
+                 target="_blank"><i
+            class="fab fa-linkedin"></i></a></li>
+          <li><a style="width: 50px;" href='https://codepen.io/kimnnguyen225/'
+                 target="_blank"><i
+            class="fab fa-codepen"></i></a></li>
+          <div id="google_translate_element" class="hide-on-small"></div>
+        </ul>
+        <a href='#' id='openup'>Menu</a>
+      </nav>
+      <div id="contact-barcode">
+        <img
+          src='https://barcode.tec-it.com/barcode.ashx?name=Kim+Nguyen&phonenumber=513-410-4388&phonenumberwork=513-410-4388&email=kimnnguyen225%40gmail.com&organisation=&title=Software+Developer&birthday=02.25.1993+00%3A00%3A00&address=8049+S+Port+Dr+West+Chester%2C+OH+45069&url=https%3A%2F%2Fktnguyen.herokuapp.com&code=QRCode_Business_vCard&translate-esc=false&data=KIM+DIGITAL+CARD%0D%0AName%3A+Kim+Nguyen%0D%0ATitle%3A+Software+Developer%0D%0ACell+phone%3A+513-410-4388%0D%0AE-mail%3A+kimnnguyen225%40gmail.com%0D%0AB-Day%3A+02-25-1993%0D%0AAddress%3A+West+Chester%2C+OH+45069%0D%0AURL%3A+https%3A%2F%2Fktnguyen.herokuapp.com&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0' alt='Kim Nguyen Software Developer'/>
+      </div>
+    </header>
+  </div>
+  <!-- -----------------------Blog----------------------------->
+  <section id="blog" class="section bg-gra">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">
+          <h1><i class="fas fa-bug"></i> Bugs Blog</h1>
+          <p>
+            The problems I encountered and solved while learning to program as a Junior Dev
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog1.jpg" alt=""><br>
+            A "PHP app" as a static site that is hosted on Heroku. <a
+            href="blog/2019/05/heroku-fake-php-app-as-static-site.html">Read
+                                                                        more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+      </div>
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
+          <p class="main-blog-desc">
+            <img src="img/blog.jpg" alt=""><br>
+            COMING <a
+            href="">Read
+                    more</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+/*---------------------------------IMPORT FONT-------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|VT323&display=swap');
+
+#blog h1 {
+  font-family: 'VT323', monospace;
+  color: black;
+  font-size: 6rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#blog .blog-title {
+  font-family: 'VT323', monospace;
+  color: black;
+  font-size: 4rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.nav-logo-responsive {
+  height: auto;
+  width: auto;
+  max-height: 70px;
+  max-width: 260px;
+}
+
+#top-link a {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#top-link a:hover {
+  text-decoration: none;
+}
+
+#blog p {
+  font-family: 'VT323', monospace;
+  font-family: 'Nanum Pen Script', cursive;
+  color: black;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#blog .main-blog-desc {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+#blog .main-blog-desc img {
+  width: 90%;
+}
+
+#blog-desc a:hover {
+  text-decoration: none;
+}
+
+#blog-desc h2, #blog-desc p {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+}
+
+#blog-desc p, #blog-desc ul, #blog-desc ol {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.bg-gra {
+  background: -webkit-gradient(linear, left bottom, left top, from(#66fbf6), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #66fbf6 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #66fbf6 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #66fbf6 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #66fbf6 0%, #a18cd1 100%);
+}

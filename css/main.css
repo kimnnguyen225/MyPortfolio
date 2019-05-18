@@ -27,8 +27,8 @@
 #portfolio-s1 h1 {
   font-family: 'Akronim', cursive;
   color: black;
-  font-size: 5rem;
-  margin-top: 5rem;
+  font-size: 4rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -51,22 +51,6 @@
 section#portfolio-tech {
   background-color: white;
   font-size: 16px;
-}
-
-#portfolio-tech .section-head {
-  padding-top: 3rem;
-}
-
-#portfolio-tech h2 {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-#portfolio-tech h3 {
-  text-align: center;
-  border-bottom: #21282d solid 1px;
-  padding-bottom: 5px;
-  margin-bottom: 30px;
 }
 
 section#portfolio-tech, section#portfolio-edu-exp table {
@@ -94,10 +78,6 @@ section#portfolio-edu-exp {
   font-size: 16px;
 }
 
-#portfolio-edu-exp h2 {
-  text-align: center;
-}
-
 #portfolio-edu-exp h3 {
   text-align: center;
   border-bottom: #21282d solid 1px;
@@ -108,10 +88,6 @@ section#portfolio-edu-exp {
 /* Credit to https://www.youtube.com/watch?v=FQ0c76LGW1M*/
 section#portfolio-projects {
   background: url("../img/project-tree.jpg") no-repeat center/cover;
-}
-
-#portfolio-projects h2 {
-  text-align: center;
 }
 
 #portfolio-projects i {
@@ -285,9 +261,10 @@ section#portfolio-projects {
 }
 
 .section-head {
-  font-size: 3rem;
-  margin: 0;
-  padding-top: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 /* ----------------Body - Container - Link - Image - Margin------------------ */
@@ -416,14 +393,14 @@ nav div {
   width: auto;
   max-height: 37px;
   max-width: 200px;
-  padding-left: 4rem;
+  padding-left: 1rem;
 }
 
 
 #portfolio-nav #contact-barcode img {
   margin-top: 3vh;
   padding: 2rem;
-  width: 13rem;
+  width: 11rem;
   position: fixed;
   margin-left: 90vw;
   top: 0;
