@@ -523,9 +523,13 @@ nav a#openup {
 /*large >= 992px to <= 1999px .col-lg-*/
 @media all and (min-width: 992px) and (max-width: 1199px) {
 
+  #portfolio-s1 .container-fluid, #portfolio-edu-exp .container-fluid, #portfolio-tech .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   #portfolio-projects .container-fluid {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
 }
@@ -578,7 +582,7 @@ nav a#openup {
   }
 
   #portfolio-s1 h1 {
-    font-size: 3.5rem;
+    font-size: 1.7rem;
   }
 
   #portfolio-s1 .container-fluid, #portfolio-edu-exp .container-fluid, #portfolio-tech .container-fluid, #portfolio-projects .container-fluid {
@@ -589,11 +593,11 @@ nav a#openup {
   }
 
   #portfolio-tech h2, #portfolio-edu-exp h2, #portfolio-projects h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   #portfolio-tech h3, #portfolio-edu-exp h3, #portfolio-projects h3 {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
   }
 
   #portfolio-tech li {
@@ -601,7 +605,8 @@ nav a#openup {
   }
 
   #portfolio-tech li, #portfolio-tech th, #portfolio-tech td, #portfolio-edu-exp li, #portfolio-edu-exp th, #portfolio-edu-exp td {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 22px;
   }
 
   #portfolio-projects .main-timeline .title {
