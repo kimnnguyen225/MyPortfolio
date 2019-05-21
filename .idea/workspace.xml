@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5732158f-5a66-47d9-b249-b7cd364f5559" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/blog2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/blog2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/blog3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/blog3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
@@ -27,6 +25,18 @@
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +92,8 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/blog.css" />
-        <option value="$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html" />
         <option value="$PROJECT_DIR$/blog.html" />
+        <option value="$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html" />
       </list>
     </option>
   </component>
@@ -202,12 +212,12 @@
       <workItem from="1558315189735" duration="4919000" />
       <workItem from="1558377943065" duration="1826000" />
       <workItem from="1558385968895" duration="8610000" />
-      <workItem from="1558471812615" duration="4644000" />
+      <workItem from="1558471812615" duration="4756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158419000" />
+    <option name="totallyTimeSpent" value="158531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -226,7 +236,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28555554" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.52111113" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,16 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="202" column="53" selection-start-line="202" selection-start-column="53" selection-end-line="202" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -412,6 +412,16 @@
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="75" column="58" selection-start-line="75" selection-start-column="58" selection-end-line="75" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
