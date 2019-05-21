@@ -78,6 +78,10 @@
   padding-bottom: 2rem;
 }
 
+#blog-desc {
+  font-size: 1.5rem;
+}
+
 #top-link footer {
   color: #ffffff;
 }

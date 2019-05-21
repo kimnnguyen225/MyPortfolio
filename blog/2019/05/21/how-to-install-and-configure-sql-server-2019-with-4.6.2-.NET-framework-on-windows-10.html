@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+  <meta property="og:description" content="Kim Nguyen Portfolio Webpage"/>
+  <meta name="keywords"
+        content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume">
+
+  <!-- ------------------------------Favicon ------------------------- -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--------------------------- Main CSS-------------------------->
+  <link href="../../../../css/main.css" rel="stylesheet" media="all">
+  <link href="../../../../css/blog.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- ---------------------------CDN--------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!----------------------------FONT AWESOME----------------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+  <title>How to install & configure SQL Server 2019 Developer with 4.6.2 .NET framework on
+         Windows 10</title>
+</head>
+<body devtools.*.enabled="false">
+  <!-- -----------------------Blog----------------------------->
+  <section id="blog" class="section bg-gra">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">
+          <div id="top-link" class="text-center">
+            <img
+              class="nav-logo-responsive" src="../../../../img/personal-logo-white.png"
+              alt="Kim Nguyen brand">
+            <a href="../../../../blog.html" style="width: 60px;">More Blogs</a>
+            <a href='../../../../home.html' target="_blank" style="width: 80px;">About Author</a>
+            <hr>
+            <footer class="text-right blockquote-footer"><i class="fas fa-user-tie"></i> Author: Kim
+                                                                                  Nguyen,
+              <cite title="Source Title"> Software Developer/Blogger</cite><br><i
+                class="far fa-calendar-alt"> Date: 05/21/2019</i></footer>
+          </div>
+          <div class="text-left" id="google_translate_element"></div>
+          <h1 class="blog-title">How to install & configure SQL Server 2019 Developer with 4.6.2 .NET framework on
+                                 Windows 10</h1>
+        </div>
+      </div>
+
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+          <div id="blog-desc">
+            <img style="width:80%;"
+              src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475369/Blog/5-21/25_jsc1e4.jpg" alt="">
+            <br><br>
+            <h3>Disclaimer</h3> <br>
+            The information in this guide is true and complete to the best of the author's
+            knowledge. All recommendations are made without guarantee on the part of the author.
+            By using this guide you understand that the author is not responsible to troubleshoot
+            your device(s). <br><br>
+            <h3>Audience</h3> <br>
+            This guide is intended to provide a fully functional database/SQL programming
+            environment knowledge for beginner to intermediate level users. <br><br>
+            <h3>Install SSMS & Database AdventureWorks2017 from Microsoft</h3> <br>
+            Storage need: 6-8GB <br>
+            Total installation time < 60 mins. <br>
+              - You can sign up for Microsoft account if you want, I didn't sign-up for one in
+            this guide. <br>
+              - New SQL Server 2019 standalone install ~ 20 mins. <br>
+              - SQL Server Management Tools ~ 15 mins. <br>
+              - AdventureWorks sample online transaction Database (install and restore) ~ 10
+            mins. <br><br>
+            <h2>
+              Let's begin...
+            </h2>
+            <ol>
+              <li>
+                Install SQL Server 2019:
+                https://www.microsoft.com/en-us/sql-server/sql-server-2019#Install
+              </li>
+              <li>
+                Install .NET framework 4.6.2: https://www.microsoft.com/en-us/download/details.aspx?id=53344
+              </li>
+              <li>
+                Run SQL2019CTP2.5-SSEI-Eval.exe to install SQL Server 2019 to your Windows
+              </li>
+              <li>
+                Click on New SQL Server stand-alone installation or add features to an existing
+                installation
+                <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/1_egisvp.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click Next <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/2_nld6ys.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on the 3 checked-boxes as shown in figure below. Then click Next <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/3_pcdfik.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click Next <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/4_zamx01.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click Next <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/5_ybvxit.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on Add Current User. Then click Next <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/6_dm9zva.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click Close <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/7_kkr087.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Go back to SQL Server Installation Center. Click on Install SQL Server Management
+                Tools <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/8_zxqcko.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Windows will open up a page, scroll down and find the link as shown in the figure
+                below, click on it to download SQL Server Management Studio version 18.0 <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/9_gqpj4v.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Double click on SSMS-Setup to run it <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/10_sbmpiy.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click Install <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/11_r6eozl.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Create a folder and name it <strong>temp</strong> in your drive, in my example, I
+                created the
+                folder in my C:/Program Files/temp <br>
+                Go to:
+                https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-2017
+                <br>
+                and look for <strong>AdventureWorks2017.bak</strong>, download it to your temp folder <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/12_l3rcev.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                On your Windows, search for SQL Server Management Studio 18 <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/13_sggjec.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Once the application runs, it will prompt you to connect to server. <br>
+                For Server name, type <strong>localhost</strong>, then click Connect <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475235/Blog/5-21/14_ac7xws.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Right-click on Databases, choose Restore Database <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/15_quwth2.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on the three ... ellipsis, then click on Add as shown in the figure below <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/16_hnqeut.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Look for <strong>temp</strong> folder, then click on the .bak file. Then click OK
+                <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/17_aot4nf.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on OK <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/18_fl7mm5.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Wait for it to restore the database, when it's finished, it will prompt you with
+                a successfully restored message. Click OK. <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/19_sqnw5n.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Follow step 18-22 if you want to restore your sample database if you messed it up
+                while learning. <br>
+                Click on <strong>New Query</strong>, and run a simple select query to test the
+                database to make sure it works perfectly.
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558475236/Blog/5-21/20_ifqr77.png" alt="">
+                <br><br>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+<footer>
+  Copyright &#169; Kim Nguyen 2019
+</footer>
+  </section>
+
+  <!-- -------------google translate------------- -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
