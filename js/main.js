@@ -40,10 +40,3 @@ $(' .cf a').on('click', function(event) {
         );
     }
 });
-
-// mouse/tip over link to see a preview
-$(".tiptext").onmouseover(function() {
-  $(this).children(".preview-desc").show();
-}).onmouseout(function() {
-  $(this).children(".preview-desc").hide();
-});

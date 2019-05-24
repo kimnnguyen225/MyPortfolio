@@ -33,7 +33,7 @@ function setupEditor() {
     </p>
     <table style="font-size: 1.2rem; color: black border-collapse:separate; border-spacing:0 7px;">
       <tr><td><i class="far fa-hand-point-right"></i> Contact: <a href="mailto: kimnnguyen225@gmail.com">
-                                                            kimnnguyen225@gmail.com</a> or 513-410-4388</td></tr>
+                                                            kimnnguyen225@gmail.com</a></td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> Dedicated and dependable Software Developer having 2+ years of knowledge and experience in Waterfall and Agile methodologies. I possess expertise in Object-Oriented Analysis/Design, skilled at progressing from problem statements to well-documented designs with diverse operational experience in developing, testing, and supporting multiple languages, operating systems, and web applications.</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> I graduated from a full stack Java software development bootcamp with 2 days of Scrum Foundation from Cincy Code IT/MAX Technical Training located in Mason, OH. Hence, I'm currently PSM1 licensed. In addition, prior to Java bootcamp, I was also a Software Quality Assurance bootcamp graduate from Per Scholas, located in Cincinnati, OH.</td></tr>
       <tr><td><i class="far fa-hand-point-right"></i> In order to be a successful, well rounded Software Developer, I continue to grow my knowledge and experience daily by learning significant skills from online resources.</td></tr>

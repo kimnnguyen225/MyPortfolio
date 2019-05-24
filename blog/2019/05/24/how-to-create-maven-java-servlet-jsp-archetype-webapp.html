@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558643955/Portfolio/knguyen-300x300-logo_txclml.jpg" />
+  <meta property="og:image:secure_url" content="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558643955/Portfolio/knguyen-300x300-logo_txclml.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+  <meta property="og:description" content="Kim Nguyen Technical Blog"/>
+  <meta name="keywords"
+        content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume">
+
+  <!--------------------------- Main CSS-------------------------->
+  <link href="../../../../css/main.css" rel="stylesheet" media="all">
+  <link href="../../../../css/blog.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!----------------------------FONT AWESOME----------------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+  <title>How to create Java JSP Servlet with Maven Archetype Webapp</title>
+</head>
+<body devtools.*.enabled="false">
+  <!-- -----------------------Blog----------------------------->
+  <section id="blog" class="section bg-gra">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">
+          <div id="top-link" class="text-center">
+            <img
+              class="nav-logo-responsive" src="../../../../img/personal-logo-white.png"
+              alt="Kim Nguyen brand">
+            <a href="../../../../blog.html" style="width: 60px;">More Blogs</a>
+            <a href='../../../../home.html' target="_blank" style="width: 80px;">About Author</a>
+            <hr>
+            <footer class="text-right blockquote-footer"><i class="fas fa-user-tie"></i> Author: Kim
+                                                                                  Nguyen,
+              <cite title="Source Title"> Software Developer/Blogger</cite><br><i
+                class="far fa-calendar-alt"> Date: 05/24/2019</i></footer>
+          </div>
+          <div class="text-left" id="google_translate_element"></div>
+          <h1 class="blog-title">How to create Java JSP Servlet with Maven Archetype Webapp</h1>
+        </div>
+      </div>
+
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+          <div id="blog-desc">
+            <h3>Disclaimer</h3> <br>
+            The information in this guide is true and complete to the best of the author's
+            knowledge. All recommendations are made without guarantee on the part of the author.
+            By using this guide you understand that the author is not responsible to troubleshoot
+            your application. <br><br>
+            <h3>Audience</h3> <br>
+            This guide is intended to provide a how-to guide for beginner Software Developers.
+            <br><br>
+            <h3>You will need:</h3> <br>
+            <ul>
+              <li>IDE, I'm using IntelliJ IDEA Ultimate (paid) 2019 version</li>
+              <li>Basic knowledge or familiar with war and war_exploded of IntelliJ</li>
+              <li>Java JDK, I'm using 12.0.1 version</li>
+              <li>Basic knowledge of Tomcat server, I'm using 9.0.19 version</li>
+              <li>Basic knowledge of how to create JSP/Servlet as you would with Java EE</li>
+              <li>Helpful if have basic knowledge with MVC (Model View Controller)</li>
+            </ul><br><br>
+            <h2>
+              Let's begin...
+            </h2>
+            <ol>
+              <li>
+                <ol>
+                  <li>Create new Java project</li>
+                  <li>Choose Maven</li>
+                  <li>Click on check-box Create from archetype</li>
+                  <li>Look for org.apache.maven.archetypes:maven-archetype-webapp</li>
+                  <li>Click Next</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/1_jgd9rc.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Type your project's GroupId</li>
+                  <li>Type your project's ArtifactId</li>
+                  <li>Click Next</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/2_xirued.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Keep everything as default. Click Next<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/3_lec9q4.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Type your project's name</li>
+                  <li>Define your project location</li>
+                  <li>Click Finish</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/4_pxcmwn.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Wait for IntelliJ to install Maven and JUnit dependencies<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/5_fbnoif.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Open web.xml and make changes as shown below in the figure.<br>
+                <img
+                  style="width: 100%;"
+                  src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/6_lrbrkg.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                It will look like this when you are done.<br>
+                <img style="width: 100%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/7_rmbavz.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on File > Project Structure</li>
+                  <li>Click on Modules</li>
+                  <li>Click on Dependencies</li>
+                  <li>Click on the + sign as shown in the figure below</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/8_kypjcx.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on Library</li>
+                  <li>Click on triangle arrow next to Application Server Libraries to expand
+                      the list</li>
+                  <li>Choose your Tomcat version, I'm choosing 9.0.19</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/9_h0lhan.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                This is optional, but if you are creating Maven, AngularJS, Java web application
+                then you can add Gson jar file to convert your Java objects to JSON.
+                <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/10_xocjnm.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on the check-boxes of Tomcat (and in my case, Gson jar file too), click
+                Apply<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/11_nfu2pg.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on Artifacts</li>
+                  <li>Choose your projectname:war exploded</li>
+                  <li>Click OK</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726876/Blog/24/12_z3fntj.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Expand src folder</li>
+                  <li>Expand main folder</li>
+                  <li>Right click on main folder, choose New, choose New Directory</li>
+                  <li>Type java</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558729403/Blog/24/13_uita30.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Right click on the new directory named java you just created in the previous step.
+                Choose Mark Directory As > Sources Root. You will notice the folder change its
+                grey color to blue color<br>
+                After you mark this folder as sources root, then you can create your domain
+                folder, for example, mine is com.herokuapp.qctune, then you can create
+                sub-directories for your MVC folders, and all of your Java classes,
+                interfaces, servlets will go into java (source root). Your JSP files, CSS, JS, and
+                other files will go to webapp folder, under main as well. <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558730124/Blog/24/14_repz3m.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Go to web browser and search for Maven Servlet<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/15_t9s2wz.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click on the staple Maven servlet version. Here I'm choosing 2.5<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/16_ituisu.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Copy the dependency as shown in the figure below and paste it in your pom.xml
+                file<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/17_cjc2id.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Local dependencies in your pom.xml, and your denpendency will go inside
+                dependencies tag<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/18_p8zpsv.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                This is what it looks like after you are done adding your servlet Maven
+                dependency<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726878/Blog/24/19_lugujq.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on Add Configuration</li>
+                  <li>Click on + sign and locate Tomcat Server</li>
+                  <li>Click on Tomcat Server and choose Local</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726878/Blog/24/20_gpuu14.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Type in your Tomcat server name. I named mine Tomcat Local</li>
+                  <li>Open browser > After launch. By default, IntelliJ will show your default
+                      browser when you configure your IntelliJ IDEA, I choose Chrome, but you
+                      can choose whichever browser you want Tomcat Localhost to deploy to.</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/21_rmbhv1.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on Deployment tab</li>
+                  <li>Click on FIX</li>
+                  <li>Choose your projectname:war exploded</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/22_lgsiac.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Click OK<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726877/Blog/24/23_hakuen.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on File > Project Structure</li>
+                  <li>You can add your Database connector from here using Maven repository or
+                      you can add dependency from Maven website to your pom.xml.</li>
+                  <li>Notice I'm using 8.0.16 MySQL Connector and MySQL
+                      Workbench for my database</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726878/Blog/24/24_alla6u.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ol>
+                  <li>Click on Modules</li>
+                  <li>Click on Web under your project's name as shown in the figure below</li>
+                  <li>Click on the check-box Source Roots</li>
+                  <li>Click OK</li>
+                </ol><br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726878/Blog/24/26_n1lana.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                If you run into any issue, try to re-configure/reimport Maven from your pom.xml
+                file<br>
+                <ol>
+                  <li>Right click on pom.xml</li>
+                  <li>CLick on Maven</li>
+                  <li>Click on Reimport</li>
+                  <li>Click on Tomcat local > restart server</li>
+                </ol>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558726878/Blog/24/27_ymxlmf.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Tomcat will locate index.jsp and will run it <br>
+                on your browser, you will see
+                localhost:8080/yourprojectname_war_exploded/index.jsp <br>
+                To open servlet, type your servlet name as follow: <br>
+                localhost:8080/yourprojectname_war_exploded/YourServlet
+              </li>
+            </ol>
+            <h3>Maven doesn't work well with Angular/AngularJS, if you are working with Angular(2-8,
+                upcoming version 9.0.0 is set to release around Oct/Nov 2019), I
+                suggest Spring MVC/Spring Boot</h3>
+            <h1>THAT'S IT, HAPPY CODING :)</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+<footer>
+  Copyright &#169; Kim Nguyen 2019
+</footer>
+  </section>
+
+  <!-- ---------------------------CDN--------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- -------------google translate------------- -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
