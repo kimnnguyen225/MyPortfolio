@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5732158f-5a66-47d9-b249-b7cd364f5559" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blog.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,10 +16,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="6327">
               <caret line="330" column="18" lean-forward="true" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#li#8;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -33,6 +32,15 @@
                 <element signature="n#style#0;n#img#0;n#li#19;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#li#20;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/blog.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -87,7 +95,6 @@
         <option value="$PROJECT_DIR$/blog/2019/05/20/javascript-should-I-use-==-or-===.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/21/how-to-install-and-configure-sql-server-2019-with-4.6.2-.NET-framework-on-windows-10.html" />
         <option value="$PROJECT_DIR$/resume.html" />
-        <option value="$PROJECT_DIR$/css/blog.css" />
         <option value="$PROJECT_DIR$/blog/2019/05/21/music.html" />
         <option value="$PROJECT_DIR$/music.html" />
         <option value="$USER_HOME$/Desktop/AudioPlayer/index2.html" />
@@ -97,6 +104,7 @@
         <option value="$PROJECT_DIR$/blog/2019/05/24/how-to-create-maven-java-servlet-jsp-archetype-webapp.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html" />
+        <option value="$PROJECT_DIR$/css/blog.css" />
       </list>
     </option>
   </component>
@@ -111,7 +119,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -187,12 +210,12 @@
       <workItem from="1558725940382" duration="7749000" />
       <workItem from="1558834152275" duration="378000" />
       <workItem from="1558835601680" duration="1404000" />
-      <workItem from="1558842812628" duration="7848000" />
+      <workItem from="1558842812628" duration="8581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182570000" />
+    <option name="totallyTimeSpent" value="183303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -350,13 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -407,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="6327">
           <caret line="330" column="18" lean-forward="true" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#img#0;n#li#8;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -420,6 +436,13 @@
             <element signature="n#style#0;n#img#0;n#li#19;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#20;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
