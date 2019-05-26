@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="canonical" href="https://ktnguyen.herokuapp.com/"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558643955/Portfolio/knguyen-300x300-logo_txclml.jpg" />
+  <meta property="og:image:secure_url" content="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558643955/Portfolio/knguyen-300x300-logo_txclml.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:title" content="Kim Nguyen Portfolio Webpage"/>
+  <meta property="og:description" content="Kim Nguyen Technical Blog"/>
+  <meta name="keywords"
+        content="web design, web design blog, web dev design, Kim Nguyen, Queen City Cincinnati Ohio OH, Kim Nguyen Portfolio, Kim Nguyen Resume, Resume, Software Developer Resume">
+
+  <!--------------------------- Main CSS-------------------------->
+  <link href="../../../../css/main.css" rel="stylesheet" media="all">
+  <link href="../../../../css/blog.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!----------------------------FONT AWESOME----------------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+  <title>Java Web Application with Spring Boot 2.1.5 and Maven package jar with embedded
+         Tomcat</title>
+</head>
+<body devtools.*.enabled="false">
+  <!-- -----------------------Blog----------------------------->
+  <section id="blog" class="section bg-gra">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  align-items-center justify-content-center">
+          <div id="top-link" class="text-center">
+            <img
+              class="nav-logo-responsive" src="../../../../img/personal-logo-white.png"
+              alt="Kim Nguyen brand">
+            <a href="../../../../blog.html" style="width: 60px;">More Blogs</a>
+            <a href='../../../../home.html' target="_blank" style="width: 80px;">About Author</a>
+            <hr>
+            <footer class="text-right blockquote-footer"><i class="fas fa-user-tie"></i> Author: Kim
+                                                                                  Nguyen,
+              <cite title="Source Title"> Software Developer/Blogger</cite><br><i
+                class="far fa-calendar-alt"> Date: 05/26/2019</i></footer>
+          </div>
+          <div class="text-left" id="google_translate_element"></div>
+          <h1 class="blog-title">Java Web App with Spring Boot 2.1.5 - Embedded Tomcat - Maven
+                                 package jar - JDK 1.8 - IntelliJ IDEA Ultimate 2019</h1>
+        </div>
+      </div>
+
+      <div class="row align-items-baseline justify-content-center">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+          <div id="blog-desc">
+            <h3>Disclaimer:</h3> <br>
+            The information in this guide is true and complete to the best of the author's
+            knowledge. All recommendations are made without guarantee on the part of the author.
+            By using this guide you understand that the author is not responsible to troubleshoot
+            your application. <br><br>
+            <h3>Target Audience:</h3> <br>
+            This guide is intended to provide a how-to for beginner Software Developers who want
+            to build a Java JDK 1.8 - Spring boot 2.1.5 - Thymeleaf template engine - JPA (Java
+            Persistence
+            API) - Maven package jar - web-app.
+            <br><br>
+            <h3>Note:</h3> <br>
+            This is just a guide to help you learn how to create a Spring boot webapp, it does not
+            guide you how to create any project example/ sample from start to finish.
+            <br><br>
+            <h3>Nice to have, before you start:</h3> <br>
+            <ul>
+              <li>IDE, I'm using IntelliJ IDEA Ultimate (paid) 2019 version, so all of the screenshots and modules, settings, etc are based off IntelliJ IDEA but you can Google search for similar options/functions/locations of libraries, etc in your choice of IDE. But IntelliJ IDEA is super-est IDE in my opinion with exposed experience with other IDEs.</li>
+              <li>Java JDK 1.8 and Spring boot 2.5.1</li>
+              <li>Basic knowledge of open source Tomcat application server</li>
+              <li>Helpful if have basic knowledge with MVC (Model View Controller - Database DAO SQL Utility - UI - Controller/Servlets)</li>
+              <li>Helpful if you know what pom.xml is</li>
+              <li>Helpful if you know Maven apache</li>
+            </ul>
+            <h3>What is Spring Boot ?</h3> <br>
+            It's a Java Framework for Web Application
+            <br><br>
+            <h3>Why Spring Boot?</h3> <br>
+            <ul>
+              <li>It makes developing <strong>production ready applications</strong> very easy, fast, and
+                  straightforward, with no hassle</li>
+              <li>It works out of the box, convention based, so there is no need for XML or code configuration most of the time</li>
+              <li><strong>No WAR file that you have to upload to your Tomcat server/Jetty server,
+                          etc. </strong> We can
+                          create self hosted web applications and execute them as a <strong>Java
+                                                                                            JAR</strong>
+                                         application, as this make deployment extremely easy and straightforward</li>
+              <li><strong>Thymeleaf</strong> is a Java library. It is an XML/XHTML/HTML5 template engine
+                                                                 that is
+                  able to apply a set of transformations to template files in order to display
+                  data and/or text produced by your applications. Lets create a simple web
+                  application using Spring Boot, embedded Tomcat, Thymeleaf template engine and
+                  JPA (Java Persistence API (Application Program Interface)) - <strong>In this
+                                                                                    example, I'll
+                                                                      create a Hotel Booking
+                                                       application</strong></li>
+            </ul>
+            <h3>What is REST Controllers?</h3> <br>
+            <ul>
+              <li>It's not a protocol, but an architectural style. It describes how two systems
+                  can share state (communicate) with one another.</li>
+              <li>In order for two systems to share state, the state (objects) are represented
+                  using a common format: XML, JSON</li>
+              <li>In the case of web applications, the most used protocol that supports RESTful
+                  architectures is HTTP</li>
+              <li>In practice, we use REST to create web applications that expose an HTTP API</li>
+              <li>
+                <strong>@Controller vs @RestController annotations</strong>
+                <ul>
+                  <li><strong>@Controller</strong>: the methods that use this annotation will instruct the
+                      framework to return <strong>a model and a view</strong> back to the
+                      client so the client will get a HTTP page that has been processed by
+                      Spring</li>
+                  <li><strong>@RestController: @Controller + @ResponseBody</strong>. @ResponseBody means
+                              that
+                      the object returned from a method that uses this annotation is
+                    <strong> the actual body</strong> of the HTTP response, represented as XML
+                      or JSON</li>
+                  <li>When we annotate a class with @Controller that basically instruct that
+                      method to search for a view to bind
+                      it to a model that
+                      has on a server and to send the response back to the client. When we use
+                      @RestController, which is a syntactic sugar that combines the controller
+                      interface with the response by the interface, we instruct Spring to take
+                      the output of that method to represent it as XML or JSON and to put it in
+                      the actual body of HTTP response itself</li>
+                  <li>PS: if you are unfamiliar with the term <strong>"Syntactic Sugar"</strong>,
+                      "Syntactic
+                      Sugar" refers to syntax elements which are not essential for accurate
+                      compilation or interpretation of the code.  They are unnecessary for the
+                      compiler, but they are generally provided because they may serve some
+                      useful purpose for programmers. i.e. it may make code more readable,
+                      improve quality by reducing opportunities for errors, reducing typing,
+                      provide alternative forms that may be more comfortable to programmers who
+                  are familiar with other languages, etc</li>
+                </ul>
+              </li>
+            </ul>
+            <h2>
+              Let's begin...
+            </h2>
+            <ol>
+              <li>
+                <ol>
+                  <li>Create new Java project</li>
+                  <li>Choose Spring Initalizr</li>
+                  <li>Change Project SDK to 8 (which is Java JDK 1.8)</li>
+                  <li>Click Next</li>
+                </ol>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895800/Blog/26/1_qzrdon.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ul>
+                  <li>Type group name</li>
+                  <li>Type Artifact name (must be all lowercase)</li>
+                  <li>Packaging: Jar (as we want to run the jar file instead of uploading WAR
+                      file to Tomcat server)</li>
+                  <li>Java Version: 8 (when I picked Java JDK 12, I got an error
+                      message "unsupported class file version 56 for current class file version
+                      up to 52" --PS: I forgot to change v.12 to v.8 before I screenshot the figure
+                      below. Sorry :) You can reference the list <a
+                      href="https://blogs.oracle.com/darcy/entry/source_target_class_file_version https://en.wikipedia.org/wiki/Java_class_file#General_layout" target="_blank">HERE</a>
+                    <ul>
+                      <li>Java 8 uses major version 52</li>
+                      <li>Java 9 uses major version 53</li>
+                      <li>Java 10 uses major version 54</li>
+                      <li>Java 11 uses major version 55</li>
+                      <li>Java 12 uses major version 56</li>
+                    </ul>
+                  </li>
+                  <li>Change Name</li>
+                  <li>You can add Description for your project, I just keep it as default as a
+                      DEMO</li>
+                  <li>Click Next</li>
+                </ul>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/2_ftr1x9.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ul>
+                  <li>Click on Web</li>
+                  <li>Check-box Web (Servlet web application with Spring MVC (model view
+                      controller) and Tomcat</li>
+                  <li>Click Next</li>
+                </ul>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/3_h70vby.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ul>
+                  <li>Click on Template Engines</li>
+                  <li>Choose Thymeleaf</li>
+                  <li>Click Next</li>
+                </ul>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/4_prjgyc.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ul>
+                  <li>Click on SQL</li>
+                  <li>Check-box JPA (Java Persistence API)</li>
+                  <li>Check-box HSQLDB (Relational Database Management System written in Java.
+                      It has a JDBC driver and supports a large subset of SQL-92, 2008, 2011
+                      standards. It offers a fast, small database engine which offers both
+                      in-memory and disk-based tables. Both embedded and server modes are
+                      available - <a href="https://en.wikipedia.org/wiki/HSQLDB" target="_blank">
+                      Per Wikipedia</a></li>
+                  <li>Click Next</li>
+                </ul>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/5_notyj4.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                <ul>
+                  <li>Click on Ops</li>
+                  <li>Click on Actuator (Production ready features to help you monitor and
+                      manage your application)</li>
+                  <li>Click Next</li>
+                </ul>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/6_csfcpc.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Type your project name, desired location and click Finish<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/7_c2mltj.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Maven will download all dependencies<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/8_nufnvi.png" alt="">
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/9_egesyz.png" alt="">
+                <br><br>
+              </li>
+              <li>
+              Click on pom.xml, as you can see it already configured all dependencies for you<br>
+              <img style="width: 80%;"
+                src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/10_j9uhdt.png" alt="">
+                <br><br>
+              <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/11_onodnh.png" alt="">
+              <br><br>
+              </li>
+              <li>
+              Expand src > main > java > your group name package > you will see Spring Boot
+              already created a Application class with <strong>@SpringBootApplication</strong>
+                                                               annotation<br>
+              <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/12_myswuh.png" alt="">
+              <br><br>
+              </li>
+              <li>
+                Right-click on your com.packagename and choose New > Java Class <br>
+                Type in your ProjectNameController <br>
+                Open ProjectNameController class, add @RestController as shown in the figure
+                below <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/13_bdetex.png" alt="">
+                <br><br>
+              </li>
+              <li>
+              Add following lines as shown in figure below and click green triangle icon next to
+              your ProjectNameApplication on the menu bar to run your application (step 2 in the
+              figure)
+                <br>
+              <img
+                style="width:90%;"
+                src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/14_y7kkt3.png" alt="">
+              <br><br>
+              </li>
+              <li>
+              Notice in Run dialog, you will see Tomcat started on port:8080<br>
+              <img style="width:80%;"
+                   src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/15_c2fa9m.png" alt="">
+              <br><br>
+              </li>
+              <li>
+                Go to your browser and type localhost:8080/hello<br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/16_larajc.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Now let generate a jar file, so you can open your project from command windows
+                <ul>
+                  <li>Click on View</li>
+                  <li>Hover over Tool Windows to expand side menu</li>
+                  <li>Click on Maven</li>
+                </ul>
+                <img style="width:80%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/17_unaupi.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Maven dialog opens, expand Lifecycle, and double-clicks on package<br>
+                <img style="width:80%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/18_odtxlw.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                After BUILD SUCCESS. Right-click on your project name, choose Show in Explorer<br>
+                <img style="width:80%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/19_kqiq9l.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Notice there is a new folder named target, double-clicks on target to open it<br>
+                Notice there is a jar java jar file that Maven package command just generated for
+                you
+                projectname-0.0.1-SNAPSHOT.jar <br>
+                This is your deployable artifact, so you don't need Maven or Tomcat <br>
+                <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895812/Blog/26/20_xpttyd.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                On command window, or here I'm using Terminal from IntelliJ IDEA, change
+                directory to target folder with <kbd>cd target</kbd><br>
+                Then you can open jar file by typing <kbd>java jar
+                                                          ./projectname-0.0.1-SNAPSHOT.jar</kbd>
+                and hit enter <br> <br>
+                <img style="width:100%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/21_zxxdvb.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Wait for Spring Boot to run<br>
+                <img style="width:90%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/22_ckfwg5.png" alt="">
+                <br><br>
+              </li>
+              <li>
+                Open your browser again and type in localhost:8080/hello and you should get the
+                same result<br>
+                Or if you already have your browser opened, just click on refresh icon on Chrome
+                <br>
+                <img style="width:100%;"
+                     src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/23_c9neo2.png" alt="">
+                <br><br>
+              </li>
+            </ol>
+            <h1>THAT'S IT, HAPPY CODING :)</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+<footer>
+  Copyright &#169; Kim Nguyen 2019
+</footer>
+  </section>
+
+  <!-- ---------------------------CDN--------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- -------------google translate------------- -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
