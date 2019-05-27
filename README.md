@@ -1,7 +1,7 @@
-# [Kim Nguyen Portfolio](http://ktnguyen.herokuapp.com/)
+# [Kim Nguyen Portfolio & Technical Blog](http://ktnguyen.herokuapp.com/)
 
 ## Just a few screenshots to show you the pre-view of my portfolio and junior technical blog as I progress in learning how to program
-## PS: Technologies: HTML5, CSS4/CDN, jQuery, JavaScript, Webstorm IDE, Photoshop CC 2019 (to create images for my blog), and hosted on Heroku (link above)
+## Technologies: HTML5, CSS4/CDN/Bootstrap4.1.3/FontAwesome/some Google Font, jQuery, JavaScript, Webstorm IDE, Photoshop CC 2019 (to create images for my blog), and hosted on Heroku (link above)
 
 ### I embedded a live editor using [ACE](https://ace.c9.io/). This is done with a combination of div and iframe and all the code lives in JavaScript
 ![Kim Nguyen Portfolio Section 1](https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558995087/Portfolio/1_smjlwf.png)
