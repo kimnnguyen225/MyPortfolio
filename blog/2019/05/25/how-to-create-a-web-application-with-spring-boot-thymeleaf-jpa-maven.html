@@ -79,73 +79,88 @@
               <li>Java JDK 1.8 and Spring boot 2.5.1</li>
               <li>Basic knowledge of open source Tomcat application server</li>
               <li>Helpful if have basic knowledge with MVC (Model View Controller - Database DAO SQL Utility - UI - Controller/Servlets)</li>
-              <li>Helpful if you know what pom.xml is</li>
               <li>Helpful if you know Maven apache</li>
+              <li>Helpful if you know Postman REST client</li>
             </ul>
             <h3>What is Spring Boot ?</h3> <br>
-            It's a Java Framework for Web Application
+            It's one of Java best frameworks for building enterprise applications <br>
+            <strong>https://start.spring.io/</strong> - you can also bootstrap your application
+            from this
+            website,
+            I create my application from IntelliJ IDEA
             <br><br>
             <h3>Why Spring Boot?</h3> <br>
             <ul>
-              <li>It makes developing <strong>production ready applications</strong> very easy, fast, and
-                  straightforward, with no hassle</li>
-              <li>It works out of the box, convention based, so there is no need for XML or code configuration most of the time</li>
-              <li><strong>No WAR file that you have to upload to your Tomcat server/Jetty server,
-                          etc. </strong> We can
-                          create self hosted web applications and execute them as a <strong>Java
-                                                                                            JAR</strong>
-                                         application, as this make deployment extremely easy and straightforward</li>
-              <li><strong>Thymeleaf</strong> is a Java library. It is an XML/XHTML/HTML5 template engine
-                                                                 that is
-                  able to apply a set of transformations to template files in order to display
-                  data and/or text produced by your applications. Lets create a simple web
-                  application using Spring Boot, embedded Tomcat, Thymeleaf template engine and
-                  JPA (Java Persistence API (Application Program Interface)) - <strong>In this
-                                                                                    example, I'll
-                                                                      create a Hotel Booking
-                                                       application</strong></li>
+              <li>It makes developing <strong>production ready applications</strong> easy and
+                  fast</li>
+              <li><strong>No WAR file</strong>, we are going to create a Java jar file
+               so that you can deploy to any server</li>
             </ul>
-            <h3>What is REST Controllers?</h3> <br>
-            <ul>
-              <li>It's not a protocol, but an architectural style. It describes how two systems
-                  can share state (communicate) with one another.</li>
-              <li>In order for two systems to share state, the state (objects) are represented
-                  using a common format: XML, JSON</li>
-              <li>In the case of web applications, the most used protocol that supports RESTful
-                  architectures is HTTP</li>
-              <li>In practice, we use REST to create web applications that expose an HTTP API</li>
+            <img src="../../../../img/blog6.png" alt="">
+            <h3>pom.xml</h3> <br>
+            <li><strong>POM stands for Project Object Model</strong> is a unit of work in Maven,
+                                     contains information about the project and configuration details used by
+                                     Maven to build the project. The build directory is target, source directory
+                                     is src/main/java, test source directory is src/test/java, etc. Basically,
+                                     when execute a task/goal, Maven looks for POM in current directory and reads the
+                                     POM, gets the needed configuration info, then executes the task/goal.
+            </li>
+            <br>
+            <h3>Let's take a look at the structure first...</h3>
+            <h3>src/main/resources</h3> <br>
+            <ol>
               <li>
+                static directory <br>
+                contains all of web resources for web applications
+              </li>
+              <li>
+                template directory <br>
+                i.e. Thymeleaf, mustache.js, EJS <br>
+                <strong>Thymeleaf</strong> is a Java library. It is an
+                XML/XHTML/HTML5 template engine
+                that is able to apply a set of transformations to template files in order to display data and/or text produced by your applications.
+              </li>
+              <li>application.properties <br>
+                You can define different environments here i.e. you could have demo, test,
+                  production environments with different values for the actual properties
+                <code>
+                  spring.datasource.url=jdbc:h2:file:./sample.db
+                </code>
+              </li>
+            </ol>
+            <h3>src/main/java/com.sample</h3> <br>
+            <ol>
+              <li>
+                model directory <br>
+                In our example, HotelBooking
+                class with @Entity annotation
+              </li>
+              <li>
+                api directory <br>
+              </li>
+              <li> service directory <br>
                 <strong>@Controller vs @RestController annotations</strong>
                 <ul>
-                  <li><strong>@Controller</strong>: the methods that use this annotation will instruct the
-                      framework to return <strong>a model and a view</strong> back to the
-                      client so the client will get a HTTP page that has been processed by
-                      Spring</li>
-                  <li><strong>@RestController: @Controller + @ResponseBody</strong>. @ResponseBody means
-                              that
-                      the object returned from a method that uses this annotation is
-                    <strong> the actual body</strong> of the HTTP response, represented as XML
-                      or JSON</li>
-                  <li>When we annotate a class with @Controller that basically instruct that
-                      method to search for a view to bind
-                      it to a model that
-                      has on a server and to send the response back to the client. When we use
-                      @RestController, which is a syntactic sugar that combines the controller
-                      interface with the response by the interface, we instruct Spring to take
-                      the output of that method to represent it as XML or JSON and to put it in
-                      the actual body of HTTP response itself</li>
-                  <li>PS: if you are unfamiliar with the term <strong>"Syntactic Sugar"</strong>,
-                      "Syntactic
-                      Sugar" refers to syntax elements which are not essential for accurate
-                      compilation or interpretation of the code.  They are unnecessary for the
-                      compiler, but they are generally provided because they may serve some
-                      useful purpose for programmers. i.e. it may make code more readable,
-                      improve quality by reducing opportunities for errors, reducing typing,
-                      provide alternative forms that may be more comfortable to programmers who
-                  are familiar with other languages, etc</li>
+                  <li>
+                    <strong>@Controller</strong>: the methods that use this annotation will instruct the
+                                                  framework to return <strong>a model and a view</strong> back to the
+                                                  client so the client will get a HTTP page that has been processed by
+                                                  Spring
+                  </li>
+                  <li><strong>@RestController: @Controller + @ResponseBody</strong> <br>
+                    @ResponseBody means that the object returned from a method that uses
+                        this annotation is <strong>the actual body</strong> of the HTTP
+                        response, represented as XML or JSON
+                  </li>
                 </ul>
               </li>
-            </ul>
+              <li>
+                dao directory <br>
+                You can start with an implementation and if you want to switch to a different
+                database, you simply only need to change 1 line of code, which is in
+                application.properties
+              </li>
+            </ol>
             <h2>
               Let's begin...
             </h2>
@@ -237,7 +252,7 @@
                 <br><br>
               </li>
               <li>
-                Maven will download all dependencies<br>
+                Wait for Maven to resolve all dependencies<br>
                 <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/8_nufnvi.png" alt="">
                 <img src="https://res.cloudinary.com/dnw6i7lsh/image/upload/v1558895811/Blog/26/9_egesyz.png" alt="">
                 <br><br>
