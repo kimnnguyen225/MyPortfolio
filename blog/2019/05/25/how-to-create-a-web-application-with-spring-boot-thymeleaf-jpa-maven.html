@@ -82,31 +82,107 @@
               <li>Helpful if you know Maven apache</li>
               <li>Helpful if you know Postman REST client</li>
             </ul>
-            <h3>What is Spring Boot ?</h3> <br>
-            It's one of Java best frameworks for building enterprise applications <br>
-            <strong>https://start.spring.io/</strong> - you can also bootstrap your application
-            from this
-            website,
-            I create my application from IntelliJ IDEA
-            <br><br>
-            <h3>Why Spring Boot?</h3> <br>
+            <h3>What is & Why Spring Boot ?</h3> <br>
             <ul>
-              <li>It makes developing <strong>production ready applications</strong> easy and
-                  fast</li>
-              <li><strong>No WAR file</strong>, we are going to create a Java jar file
-               so that you can deploy to any server</li>
+              <li>
+                <strong>Spring</strong> is a template/framework that lets you write Enterprise Java
+                                          applications
+              </li>
+              <li>
+                <strong>Boot</strong> is
+                                      bootstrap, <strong>Spring Boot</strong> is a tool that lets you bootstrap a
+                                      stand-alone, production-grade, Spring based application
+                                      from scratch that you can "just run". Stand-alone application means that what you
+                                      have, you can just run and have it started a web server so you don't have to find one
+                                      and configure it, typically Spring Boot's default server is Tomcat localhost runs on
+                                      port 8080 but you can change it in application.properties.
+              </li>
+              <li>
+                <strong>No WAR file</strong>, we are going to create a Java jar file
+                                            so that you can deploy to any server
+              </li>
+              <li>
+                If you are familiar with Spring framework, you will understand the pain of having to
+                do a lot of stuff to the point where you have a lot of configurations to do in
+                POM.xml, but Spring Boot will take care of all of these for you
+              </li>
+              <li>
+                <strong>https://start.spring.io/</strong> - you can bootstrap your application
+                                                          from this website and Spring use Eclipse > https://spring.io/tools3/eclipse,
+                                                          I create my Spring Boot 2.5.1 Enterprise application from IntelliJ IDEA Ultimate
+                                                          version 2019
+              </li>
             </ul>
+            <h3>Let's talk about Spring a little</h3> <br>
+            It has the <strong>origin from the concept of dependency injection</strong>, but it's a whole
+                               lot
+            more, it's a huge Java framework that builds Enterprise Java applications and it
+            handles programming and configurations for you and let you focus on solving business
+            services and creating MVC layers/POJO classes and then use annotations. Spring will apply a whole lot of things to your annotated classes and manage lifecycle of those classes. Spring also has infrastructure supports, for example, connecting to IBM database, MongoDB database, etc, and you can leverage some of the infrastructure when you're building your applications.
+            <br> <br>
+            <strong><u>Spring is so awesome, but it also has some minor problems such as: </u></strong><br>
+            - It's a huge framework that over the years, Spring team tried to address all different
+            ways to provide solutions to businesses' common concerns when building enterprise
+            applications certain ways the business wants <br>
+            - Spring has a lot of setup/configuration steps as it needs to do a lot of
+            configurations (adding properties, dependencies, plugins, etc) for
+            it to do what you want it to do. Since it has a lot of capabilities and flexibilities,
+            there is no starting point/no guide/no pathway to show you how to ideally build a
+            particular enterprise application, you are left to figure it out on your own. <br> <br>
+            <h3>Annotations</h3>
+            This site contains a list of annotations which explains really well of each
+            annotation's usage
+            in Spring
+            framework => <a
+            href="https://springframework.guru/spring-framework-annotations/">Spring Framework
+                                                                              Annotations
+          </a> <br>
+            Uhh, and I want to point out Controller annotations <br>
+            <strong>@Controller vs @RestController</strong>
+            <ul>
+              <li>
+                <strong>@Controller</strong>: the methods that use this annotation will instruct the
+                                            framework to return <strong>a model and a view</strong> back to the
+                                            client so the client will get a HTTP page that has been processed by
+                                            Spring
+              </li>
+              <li><strong>@RestController: @Controller + @ResponseBody</strong> <br>
+                @ResponseBody means that the object returned from a method that uses
+                this annotation is <strong>the actual body</strong> of the HTTP
+                response, represented as XML or JSON
+              </li>
+            </ul>
+            <br>
             <img src="../../../../img/blog6.png" alt="">
             <h3>pom.xml</h3> <br>
-            <li><strong>POM stands for Project Object Model</strong> is a unit of work in Maven,
-                                     contains information about the project and configuration details used by
-                                     Maven to build the project. The build directory is target, source directory
-                                     is src/main/java, test source directory is src/test/java, etc. Basically,
-                                     when execute a task/goal, Maven looks for POM in current directory and reads the
-                                     POM, gets the needed configuration info, then executes the task/goal.
-            </li>
-            <br>
-            <h3>Let's take a look at the structure first...</h3>
+            <ul>
+              <li><strong>POM stands for Project Object Model</strong>. The build directory is
+                                                                      target, source directory
+                                                                      is src/main/java, test source directory is src/test/java,
+                                                                      etc. Maven is your
+                                                                      dependencies management tool
+                                                                      and Maven will look for
+                                                                      pom.xml to know these are all
+                                                                      the things your app needs in
+                                                                      order for your app to run.
+                                                                      Then Maven will go to the
+                                                                      repository which has the
+                                                                      list of all dependencies that
+                                                                      you would ever need and
+                                                                      resolves all the jars that
+                                                                      need to be added/downloaded
+                                                                      to class path.
+              </li>
+              <li>
+                Spring Boot's philosophy is convention over configurations, for 80% of used
+                cases, Spring Boot provides default configurations and there are other
+                configurations of our own that we have to add, too. Spring team has created a
+                project called spring boot starter parent and puts all the default opinionated
+                Maven configurations into it and the child project (which is Hotel Booking) will
+                inherits the parent project's configurations.
+              </li>
+            </ul>
+            <h3>Let's take a look at Spring Boot project's structure...</h3>
             <h3>src/main/resources</h3> <br>
             <ol>
               <li>
@@ -122,13 +198,18 @@
               </li>
               <li>application.properties <br>
                 You can define different environments here i.e. you could have demo, test,
-                  production environments with different values for the actual properties
+                  production environments with different values for the actual properties <br>
+                specify your database: <br>
                 <code>
-                  spring.datasource.url=jdbc:h2:file:./sample.db
+                  spring.datasource.url=jdbc:hsqldb:file:./hotelbooking.db
+                </code> <br>
+                to change to H2 database, you can simply just change hsqldb to h2 like this <br>
+                <code>
+                  spring.datasource.url=jdbc:h2:file:./hotelbooking.db
                 </code>
               </li>
             </ol>
-            <h3>src/main/java/com.sample</h3> <br>
+            <h3>src/main/java/com.herokuapp.hotelbooking</h3> <br>
             <ol>
               <li>
                 model directory <br>
@@ -138,21 +219,8 @@
               <li>
                 api directory <br>
               </li>
-              <li> service directory <br>
-                <strong>@Controller vs @RestController annotations</strong>
-                <ul>
-                  <li>
-                    <strong>@Controller</strong>: the methods that use this annotation will instruct the
-                                                  framework to return <strong>a model and a view</strong> back to the
-                                                  client so the client will get a HTTP page that has been processed by
-                                                  Spring
-                  </li>
-                  <li><strong>@RestController: @Controller + @ResponseBody</strong> <br>
-                    @ResponseBody means that the object returned from a method that uses
-                        this annotation is <strong>the actual body</strong> of the HTTP
-                        response, represented as XML or JSON
-                  </li>
-                </ul>
+              <li>
+                service directory <br>
               </li>
               <li>
                 dao directory <br>
