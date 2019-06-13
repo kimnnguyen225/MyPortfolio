@@ -4,6 +4,9 @@
     <list default="true" id="5732158f-5a66-47d9-b249-b7cd364f5559" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/KimNguyenResume.docx" beforeDir="false" afterPath="$PROJECT_DIR$/file/KimNguyenResume.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/KimNguyenResume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/file/KimNguyenResume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="145" column="35" selection-start-line="145" selection-start-column="34" selection-end-line="145" selection-end-column="35" />
+            <state relative-caret-position="1808">
+              <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resume.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1333">
+              <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +93,6 @@
         <option value="$PROJECT_DIR$/css/resume.css" />
         <option value="$PROJECT_DIR$/blog/2019/05/17.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/heroku-fake-php-app-as-static-site.html" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/17/heroku-fake-php-app-as-static-site.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/19/heroku-java-web-app-postgresql.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/20/javascript-should-I-use-==-or-===.html" />
@@ -86,6 +109,7 @@
         <option value="$PROJECT_DIR$/blog/2019/05/28/software-testing-video-list-training.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -209,18 +233,21 @@
       <workItem from="1558995741800" duration="1024000" />
       <workItem from="1559000918219" duration="9516000" />
       <workItem from="1559116784372" duration="599000" />
-      <workItem from="1559127241284" duration="2949000" />
+      <workItem from="1559127241284" duration="3231000" />
+      <workItem from="1559321823145" duration="390000" />
+      <workItem from="1560420508905" duration="252000" />
+      <workItem from="1560420775494" duration="314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198215000" />
+    <option name="totallyTimeSpent" value="199453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21063718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09320695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +260,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24333334" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24333334" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -348,13 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/AudioPlayer/index2.html" />
     <entry file="file://$USER_HOME$/Desktop/AudioPlayer/index.html" />
     <entry file="file://$PROJECT_DIR$/music.html" />
@@ -387,16 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -436,8 +446,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/2019/05/25/how-to-create-a-web-application-with-spring-boot-thymeleaf-jpa-maven.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="145" column="35" selection-start-line="145" selection-start-column="34" selection-end-line="145" selection-end-column="35" />
+        <state relative-caret-position="1808">
+          <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1333">
+          <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
